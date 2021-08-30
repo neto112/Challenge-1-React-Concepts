@@ -22,7 +22,7 @@ export function TaskList() {
     }
     // renderiza new value que estão no array cópia
     // que será o array atualizado (setTasks)
-      setTasks(tarefa => [...tarefa, newTask])
+      setTasks([...tasks, newTask])
       // Ele limpa o input
         setNewTaskTitle('')
     }
@@ -35,6 +35,12 @@ export function TaskList() {
       ...task, isComplete: !task.isComplete} : task);
       setTasks(changeTask)
     }
+    
+  // const altTasks = tasks
+  // const findIndex = altTasks.findIndex(task => task.id === id);
+  // altTasks[findIndex].isComplete = !altTasks[findIndex].isComplete;
+  // copiar e colar após "=", mas colocar ! para que seja falso.
+  // setNewTaskTitle([...altTasks])
 
   // remover um item da lista pelo ID
   function handleRemoveTask(id: number) {
