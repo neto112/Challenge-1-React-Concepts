@@ -74,6 +74,7 @@ export function TaskList() {
               <div className={task.isComplete ? 'completed' : ''} data-testid="task" >
                 <label className="checkbox-container">
                   <input 
+                    
                     type="checkbox"
                     readOnly
                     checked={task.isComplete}
