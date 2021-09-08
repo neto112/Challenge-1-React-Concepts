@@ -1,6 +1,8 @@
 import '../styles/header.scss'
+// eslint-disable-next-line no-use-before-define
+import React from 'react'
 
-export function Header() {
+export function Header () {
   return (
     <header className="header">
       <div>
